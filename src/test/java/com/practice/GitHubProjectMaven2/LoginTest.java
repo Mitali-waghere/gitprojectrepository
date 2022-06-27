@@ -23,11 +23,14 @@ public class LoginTest {
 	System.out.println("Executing Login Test");
 	driver.get("https://www.facebook.com/");
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	System.out.println("ënteting username");
 	
 	driver.findElement(By.name("email")).sendKeys("vwaghere04@gmail.com");
 	
+	System.out.println("entering passward");
 	driver.findElement(By.name("pass")).sendKeys("abcd");
 	
+	System.out.println("clicking to login button");
 	driver.findElement(By.name("login")).click();	
 	
 	
